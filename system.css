@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    background-color: #050a1a;
+    color: #00bfff;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.quest-panel, .status-panel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 80vh;
+    background: rgba(10, 10, 30, 0.85);
+    border: 4px solid #00bfff;
+    box-shadow: 0px 0px 30px rgba(0, 191, 255, 0.8);
+    text-shadow: 0px 0px 10px rgba(0, 191, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.goal {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+button {
+    background: linear-gradient(45deg, #00bfff, #005f9e);
+    color: #fff;
+    border: 2px solid #00bfff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 191, 255, 1);
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #005f9e, #00bfff);
+    box-shadow: 0px 0px 20px rgba(0, 191, 255, 1);
+}
+
+.status-link {
+    color: #ffcc00;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+#time-display {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ffff;
+}
+
+.nav-top {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px; /* Adds spacing between button and content box */
+}
+
+.holo-button {
+    background: rgba(0, 200, 255, 0.1);
+    border: 2px solid #00ffff;
+    color: #00ffff;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0 0 6px #00ffff;
+    backdrop-filter: blur(6px);
+}
+
+.holo-button:hover {
+    background: rgba(0, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Add spacing between the button and the main content */
+.quest-panel,
+.status-panel {
+    margin-top: 40px;
+}

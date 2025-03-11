@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Leveling Workout Quest</title>
+    <link rel="stylesheet" href="system.css">
+</head>
+<body>
+    <div class="nav-top">
+        <a href="status.html" class="holo-button">STATUS</a>
+    </div>
+
+    <div class="quest-panel">
+        <h1>QUEST INFO</h1>
+        <p>DAILY QUEST - TRAIN TO BECOME A FORMIDABLE COMBATANT</p>
+        <div id="time-display"></div>
+
+        <div class="goal">
+            <span>Push-ups: </span> <span id="pushups">0/100</span>
+            <button onclick="updateExercise('pushups', 10)">+10</button>
+        </div>
+        <div class="goal">
+            <span>Sit-ups: </span> <span id="situps">0/100</span>
+            <button onclick="updateExercise('situps', 10)">+10</button>
+        </div>
+        <div class="goal">
+            <span>Squats: </span> <span id="squats">0/100</span>
+            <button onclick="updateExercise('squats', 10)">+10</button>
+        </div>
+        <div class="goal">
+            <span>Run (km): </span> <span id="run">0/10</span>
+            <button onclick="updateExercise('run', 1)">+1 km</button>
+        </div>
+
+        <button onclick="checkCompletion()">Complete Quest</button>
+        <p id="status"></p>
+    </div>
+
+    <script src="system.js"></script>
+</body>
+</html>
