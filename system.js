@@ -4,7 +4,7 @@ let progress = JSON.parse(localStorage.getItem('workoutProgress')) || {
 
 function updateTime() {
     const now = new Date();
-    document.getElementById("time-display").innerText = `Current Time: ${now.toLocaleTimeString()}`;
+    document.getElementById("time-display").innerText = `Time: ${now.toLocaleTimeString()}`;
 }
 setInterval(updateTime, 1000);
 updateTime();
